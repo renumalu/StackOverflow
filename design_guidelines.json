@@ -1,0 +1,168 @@
+{
+  "identity": {
+    "name": "E1",
+    "role": "Anti-AI Designer",
+    "principles": [
+      "Fusion over Imitation",
+      "Emotion First",
+      "Content is King",
+      "Zoom In",
+      "Negative Space",
+      "Contrast"
+    ]
+  },
+  "project": {
+    "name": "Hostel Management System",
+    "type": "SaaS Dashboard",
+    "theme_strategy": "Soft Utility (Archetype 3) + Swiss Clarity (Archetype 4)",
+    "emotional_tone": "Organized, Efficient, Trustworthy, Approachable"
+  },
+  "typography": {
+    "fonts": {
+      "heading": {
+        "family": "Plus Jakarta Sans, sans-serif",
+        "weights": ["600", "700"],
+        "usage": "All headings (h1-h6), major stats, navigation links"
+      },
+      "body": {
+        "family": "Public Sans, sans-serif",
+        "weights": ["400", "500"],
+        "usage": "Paragraphs, labels, table data, inputs"
+      },
+      "mono": {
+        "family": "JetBrains Mono, monospace",
+        "usage": "IDs, code snippets, technical data"
+      }
+    },
+    "scale": {
+      "h1": "text-4xl md:text-5xl font-bold tracking-tight",
+      "h2": "text-3xl font-bold tracking-tight",
+      "h3": "text-2xl font-semibold tracking-tight",
+      "h4": "text-xl font-semibold",
+      "body_lg": "text-lg leading-relaxed",
+      "body_base": "text-base leading-relaxed",
+      "body_sm": "text-sm leading-normal",
+      "caption": "text-xs text-muted-foreground uppercase tracking-wider"
+    }
+  },
+  "colors": {
+    "palette": {
+      "primary": {
+        "name": "Indigo Trust",
+        "main": "#4f46e5",
+        "hover": "#4338ca",
+        "foreground": "#ffffff"
+      },
+      "background": {
+        "app": "#f8fafc",
+        "card": "#ffffff",
+        "sidebar": "#ffffff"
+      },
+      "text": {
+        "primary": "#0f172a",
+        "secondary": "#64748b",
+        "muted": "#94a3b8"
+      },
+      "status": {
+        "emergency": {
+          "bg": "#fef2f2",
+          "text": "#ef4444",
+          "border": "#fecaca"
+        },
+        "high": {
+          "bg": "#fff7ed",
+          "text": "#f97316",
+          "border": "#fed7aa"
+        },
+        "medium": {
+          "bg": "#fefce8",
+          "text": "#eab308",
+          "border": "#fef08a"
+        },
+        "low": {
+          "bg": "#eff6ff",
+          "text": "#3b82f6",
+          "border": "#bfdbfe"
+        },
+        "resolved": {
+          "bg": "#f0fdf4",
+          "text": "#22c55e",
+          "border": "#bbf7d0"
+        }
+      }
+    },
+    "gradients": {
+      "hero": "bg-gradient-to-br from-indigo-50 via-white to-slate-50",
+      "accent": "bg-gradient-to-r from-indigo-600 to-violet-600"
+    }
+  },
+  "layout": {
+    "grid_system": {
+      "dashboard": "grid grid-cols-1 md:grid-cols-12 gap-6 p-6",
+      "card_grid": "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+    },
+    "spacing": {
+      "container_padding": "p-6 md:p-8 lg:p-12",
+      "section_gap": "gap-8",
+      "component_gap": "gap-4"
+    },
+    "structure": {
+      "sidebar_width": "w-64",
+      "header_height": "h-16",
+      "max_content_width": "max-w-7xl mx-auto"
+    }
+  },
+  "components": {
+    "cards": {
+      "style": "bg-white rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-all duration-200",
+      "padding": "p-6"
+    },
+    "buttons": {
+      "primary": "bg-indigo-600 hover:bg-indigo-700 text-white shadow-sm hover:shadow-indigo-200/50 transition-all",
+      "secondary": "bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 hover:text-slate-900",
+      "ghost": "hover:bg-slate-100 text-slate-600 hover:text-slate-900",
+      "radius": "rounded-lg"
+    },
+    "inputs": {
+      "style": "bg-white border-slate-200 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100 transition-all rounded-lg"
+    },
+    "badges": {
+      "style": "rounded-full px-2.5 py-0.5 text-xs font-medium border"
+    }
+  },
+  "assets": {
+    "images": {
+      "login_hero": "https://images.pexels.com/photos/7969097/pexels-photo-7969097.jpeg",
+      "student_avatar_placeholder": "https://images.unsplash.com/photo-1611181355758-089959e2cfb2?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "lost_found_placeholder": "https://images.unsplash.com/photo-1713114344703-bf4fb0be30bd?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "empty_state": "https://images.unsplash.com/photo-1713114344703-bf4fb0be30bd?crop=entropy&cs=srgb&fm=jpg&q=85"
+    },
+    "icons": {
+      "library": "lucide-react",
+      "style": "stroke-width={1.5} size={20}"
+    }
+  },
+  "motion": {
+    "transitions": {
+      "default": "transition-all duration-200 ease-in-out",
+      "hover": "transform hover:-translate-y-0.5 transition-transform duration-200"
+    },
+    "animations": {
+      "fade_in": "animate-in fade-in duration-500",
+      "slide_up": "animate-in slide-in-from-bottom-4 duration-500"
+    }
+  },
+  "universal_guidelines": [
+    "Do not use 'Inter' for headings. Use 'Plus Jakarta Sans'.",
+    "Avoid generic full-screen gradients. Use subtle mesh or noise if needed.",
+    "Use 'Sonner' for all toast notifications.",
+    "Ensure all interactive elements have 'data-testid'.",
+    "Use 'lucide-react' for icons.",
+    "Do not use HTML <select> or <input type='date'>. Use Shadcn Select and Calendar.",
+    "Maintain generous spacing (p-6, p-8) inside containers.",
+    "Never use pure black (#000000). Use Slate-900 (#0f172a) instead.",
+    "Ensure high contrast for text (WCAG AA compliance).",
+    "Mobile-first responsive design is mandatory."
+  ],
+  "instructions_to_main_agent": "Follow these guidelines strictly. Use the provided image URLs for placeholders. Implement the 'Soft Utility' aesthetic with the specified color palette and typography. Prioritize the 'Bento' grid layout for dashboards."
+}
