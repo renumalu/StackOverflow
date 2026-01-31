@@ -29,8 +29,8 @@ class ReadBy(BaseModel):
     read_at: datetime = Field(default_factory=datetime.utcnow)
 
 class AnnouncementCreate(BaseModel):
-    title: str = Field(..., min_length=5, max_length=200)
-    description: str = Field(..., min_length=10)
+    title: str = Field(..., min_length=1, max_length=200)
+    description: str = Field(..., min_length=1)
     priority: AnnouncementPriority = AnnouncementPriority.NORMAL
     category: AnnouncementCategory = AnnouncementCategory.GENERAL
     target_audience: TargetAudience = Field(default_factory=TargetAudience)
@@ -48,7 +48,7 @@ class AnnouncementResponse(BaseModel):
     created_by_name: str
     is_pinned: bool
     valid_from: datetime
-    expires_at: Optional[datetime]
+    expires_at: Optional[datetime] = None
     read_by: List[ReadBy] = []
     created_at: datetime
     updated_at: datetime

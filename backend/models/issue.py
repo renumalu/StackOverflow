@@ -79,8 +79,8 @@ class Feedback(BaseModel):
 class IssueCreate(BaseModel):
     category: IssueCategory
     priority: IssuePriority
-    title: str = Field(..., min_length=5, max_length=200)
-    description: str = Field(..., min_length=10)
+    title: str = Field(..., min_length=1, max_length=200)
+    description: str = Field(..., min_length=1)
     visibility: IssueVisibility = IssueVisibility.PUBLIC
 
 class IssueUpdate(BaseModel):

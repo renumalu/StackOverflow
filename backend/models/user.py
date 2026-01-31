@@ -47,19 +47,19 @@ class UserResponse(BaseModel):
     id: str
     name: str
     email: EmailStr
-    phone: Optional[str]
+    phone: Optional[str] = None
     role: UserRole
-    hostel: Optional[str]
-    block: Optional[str]
-    room: Optional[str]
-    profile_image: Optional[str]
-    is_active: bool
-    email_verified: bool
-    expertise: Optional[List[Expertise]]
-    assigned_areas: Optional[List[AssignedArea]]
-    shift_timing: Optional[ShiftTiming]
+    hostel: Optional[str] = None
+    block: Optional[str] = None
+    room: Optional[str] = None
+    profile_image: Optional[str] = None
+    is_active: bool = True
+    email_verified: bool = False
+    expertise: Optional[List[Expertise]] = None
+    assigned_areas: Optional[List[AssignedArea]] = None
+    shift_timing: Optional[ShiftTiming] = None
     created_at: datetime
-    last_login: Optional[datetime]
+    last_login: Optional[datetime] = None
 
 class TokenResponse(BaseModel):
     access_token: str
